@@ -134,42 +134,42 @@ CartesianPoint::CartesianPoint(int x, int y)
 	SetPoint(x, y); // Set a point to x,y
 }
 
+// Setter method for setting point with SetX and SetY
 void CartesianPoint::SetPoint(int x, int y)
 {
 	SetX(x);
 	SetY(y);
 }
 
+// Method for assigning x to myX
 void CartesianPoint::SetX(int x)
 {
 	myX = x;
 }
 
+// Method for assigning y to myY
 void CartesianPoint::SetY(int y)
 {
 	myY = y;
 }
 
+// Method that retrieves and returns myX
 int CartesianPoint::GetX()
 {
 	return myX;
 }
 
+// Method that retrieves and returns myY
 int CartesianPoint::GetY()
 {
 	return myY;
 }
-
-
-
-
 
 /** GetDistanceTo Method for CartesianPoint class
 *	Determines the distance between this point and a second point.
 *	@param	pointTo: CartesianPoint
 *	@return	the distance as a double
 */
-
 double CartesianPoint::GetDistanceTo(CartesianPoint pointTo) const
 {
 	// difference between x values
@@ -186,7 +186,6 @@ double CartesianPoint::GetDistanceTo(CartesianPoint pointTo) const
 *	Converts the obj to a string.
 *	@return	the obj state as a string
 */
-
 string CartesianPoint::ToString() const
 {
 	// declare a stringstream object
